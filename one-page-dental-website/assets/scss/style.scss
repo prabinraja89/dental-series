@@ -1,0 +1,367 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+@import 'variable';
+/* ===================================== Basic CSS ==================================== */
+@import 'base/basic_setup';
+
+
+.head{
+    position: fixed;
+    background-color: #fff;
+    width: 260px;
+    height: 100vh;
+    @media screen and (max-width: 991px) {
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    box-shadow: 3px 0 30px 0 rgba(0,0,0,.04);
+    .logo{
+       
+        padding: 50px 15px;
+        img{
+            max-width: 250px; 
+        }
+        @media screen and (max-width: 991px) {
+             padding: 20px 15px;
+        }
+    }
+    .navcol{
+        ul{
+            li{
+                padding: 15px 30px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: .9rem;
+            }
+        }
+    }
+    .navbar-toggler{
+        float: right;
+          margin-top: 10px;
+         padding-right: 0px;
+        i{
+            font-size: 2rem;
+           
+           
+        }
+        
+    }
+}
+.main-content{
+    margin-left: 260px;
+    @media screen and (max-width: 991px) {
+        margin-left: 0px;
+    }
+}
+
+
+.slider {
+  .carousel-caption {
+    bottom: 150px;
+    @media screen and (max-width: 930px) {
+      bottom: 70px;
+    }
+    h3 {
+      background-color: rgba(23, 173, 182, 0.8);
+      width: auto;
+      width: fit-content;
+      text-align: left;
+      padding: 10px 15px;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      @include shado-1();
+      color: #fff;
+    }
+    p {
+      background-color: rgba(23, 173, 182, 0.8);
+      width: 60%;
+      text-align: left;
+      padding: 10px 20px;
+      color: #444;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 25px;
+      @include shado-1();
+      color: #fff;
+    }
+  }
+}
+
+
+
+.about-container{
+    @include big-padding();
+    .aboutlefft{
+        padding: 30px;
+        h2{
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                padding: 10px;
+                font-size: 1.2rem;
+                i{
+                    font-size: 1rem;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .imgright{
+        
+    }
+}
+
+
+
+
+.services {
+  background-color: #f7f7f7;
+  @include big-padding();
+  .servic-row {
+    .servcover {
+        border-bottom:5px solid #4079ff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+      padding: 30px;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      img {
+        margin-bottom: 20px;
+        max-width: 60px;
+      }
+      h4 {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    .span {
+      background-color: #17adb6;
+      color: #fff;
+      padding: 5px 25px;
+      font-weight: 600;
+      border-radius: 15px;
+      @include shado-1();
+      margin: auto;
+      margin-top: -17px;
+      margin-left: -20px;
+      width: 120px;
+    }
+    .servic-col {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .mor-cover {
+      position: absolute;
+      margin-top: -15px;
+    }
+  }
+}
+
+
+
+.testimonial-container{
+	background-color: #FFF;
+}
+.testimonial{
+	text-align: center;
+	padding: 15px;
+	.pic{
+		img{
+			max-width: 90px;
+			border-radius: 50%;
+			background-color: #FFF;
+			padding: 2px;
+			@include shado-1();
+			margin-bottom: 10px;
+		}
+	}
+	.description{
+
+	}
+	.title{
+		font-size: 1.5rem;
+		margin-top: 3px;
+		margin-top: 10px;
+	}
+	.post{
+
+	}
+}
+
+
+
+
+
+.bg-06{
+    padding:3.125rem 0;
+    position: relative;
+    background: #f3f8fc;
+    overflow: hidden;
+
+    
+
+    .blog-sub{
+        position: relative;
+        margin:20px 0px;
+        padding:20px 0px;
+
+        .blog-content{
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+
+        .blog-content-section{
+            padding: 20px 25px;
+            background: #fff;
+            border: solid 1px #eee8e8;
+            border-top: 0;
+            display: block;
+            width: 100%;
+
+            .blo-content-title{
+                 h4{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding: 3px 0px;
+                }
+                p{
+                    padding: 3px 0px;
+                    line-height: 27px;
+                    font-size: .9rem;
+                }
+            }
+
+            .blog-admin{
+                margin: 5px 0px;
+
+                ol{
+                    padding-left: 0px;
+                    li{
+                        display: inline-block;
+                        font-size: 15px;
+                        margin: 0 5px 0 0;
+                        margin-right: 10px;
+                        i{
+                            padding: 0 5px 0 0;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+//Footter Style
+
+.footer-ablove {
+  padding: 30px;
+  background-color: #05939c;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.footer-ablove .btn {
+  float: right;
+  background-color: #fff;
+  font-family: "mouse-500", Arial, Helvetica, sans-serif;
+}
+
+footer {
+  padding: 80px 50px;
+  background-color: #1b54ac;
+  color: #fff;
+}
+@media screen and (max-width: 940px) {
+  footer {
+    padding: 50px 10px;
+  }
+}
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+footer .about p {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+footer .about .foot-address {
+  display: flex;
+}
+footer .about .foot-address .icon {
+  padding: 20px 10px;
+}
+footer .about .foot-address .addet {
+  font-size: 0.9rem;
+  margin: auto 0px;
+}
+footer .fotblog .blohjb {
+  margin-bottom: 10px;
+}
+footer .fotblog .blohjb p {
+  font-size: 0.9rem;
+}
+footer .fotblog .blohjb span {
+  font-size: 0.9rem;
+}
+footer .glink ul li {
+  padding: 10px;
+}
+footer .glink ul li i {
+  margin-right: 10px;
+}
+footer .glink ul li a {
+  color: #fff;
+}
+footer .tags ul li {
+  float: left;
+  padding: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+}
+
+.copy {
+  padding: 20px;
+  background-color: #0a45a1;
+  color: #fff;
+}
+.copy a {
+  color: #fff;
+}
+.copy span {
+  float: right;
+}
+.copy span i {
+  margin-right: 20px;
+}
+
+html {
+  scroll-behavior: auto;
+scroll-behavior: smooth;
+}
